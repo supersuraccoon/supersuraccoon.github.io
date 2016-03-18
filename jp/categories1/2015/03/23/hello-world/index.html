@@ -13,6 +13,7 @@
 <link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
 <link rel="stylesheet" type="text/css" media="all" href="/css/jquery.mmenu.all.css" />
 <link rel="stylesheet" href="/css/highlightjs.piperita.css">
+<link rel="stylesheet" type="text/css" media="all" href="/css/animate.css" />
 
 <!-- Favicons generated at http://realfavicongenerator.net/ -->
 <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
@@ -30,33 +31,57 @@
 <meta name="theme-color" content="#ffffff">
 
 
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56ebab41c4c7354d"></script>
+
 </head>
 
 
     <body>
 
-    <nav id="my-menu">
+    <nav id="my-menu" style="visibility:hidden;">
   <div>
-    <p>SuperSuRaccoon</p>
-
     <ul class="pages">
-      	<li><a href="/jp"><i class="fa fa-home"></i> Home</a></li>
-        <li><a href="/posts/"><i class="fa fa-archive"></i> All Posts</a></li>
-        
-        <li><a href="/jp/search"><i class="fa fa-search"></i> Search</a></li>
-        
-      	<li><a href="/cn"><i class="fa fa-hand-o-right"></i>中文</a></li>
-      	<li><a href="/"><i class="fa fa-hand-o-right"></i>English</a></li>
-      	<li><a href="/jp"><i class="fa fa-hand-o-right"></i>日本語</a></li>
-    </ul>
+      
 
+      
+        <li><a href="/jp"><i class="fa fa-home"></i> ホーム</a></li>
+        <li><a href="/posts"><i class="fa fa-archive"></i> 記事一覧</a></li>
+        <li><a href="/jp/categories"><i class="fa fa-list"></i> カテゴリ</a></li>
+        <li><a href="/jp/tags"><i class="fa fa-tags"></i> タグ</a></li>
+        <li><a href="/jp/search"><i class="fa fa-search"></i> サーチ</a></li>
+        <li><a href="/jp"><i class="fa fa-check-square-o"></i>日本語</a></li>
+        <li><a href="/"><i class="fa fa-square-o"></i>英語</a></li>
+        <li><a href="/cn"><i class="fa fa-square-o"></i>中国語</a></li>
+      
+
+      
+
+    </ul>
+    <hr width="80%">
     <p class="links">
-  <a href="http://www.twitter.com/supersuraccoon" target="_new"><i class="fa fa-twitter"></i></a>
+  
+  	<a href="http://www.twitter.com/supersuraccoon" target="_new">
+  	<i class="fa fa-twitter"></i></a>
+  
+
+  
+  	<a href="https://www.facebook.com/supersuraccoon" target="_new">
+  	<i class="fa fa-facebook-square"></i></a>
+  
+
+  
+  	<a href="http://weibo.com/supersuraccoon" target="_new">
+  	<i class="fa fa-weibo"></i></a>
   
   
-  <a href="https://github.com/supersuraccoon" target="_new"><i class="fa fa-github-alt"></i></a>
   
-  <a href="/feed.xml" target="_new"><i class="fa fa-rss"></i></a>
+  	<a href="https://github.com/supersuraccoon" target="_new">
+  	<i class="fa fa-github-alt"></i></a>
+  
+
+  <a href="http://www.supersuraccoon-cocos2d.com" target="_new">
+  <i class="fa fa-wordpress"></i></a>
 </p>
 
   </div>
@@ -84,11 +109,9 @@
           
           by
           <span itemprop="author">
-            
             <span itemprop="author" itemscope itemtype="http://schema.org/Person">
               <span itemprop="name">SuperSuRaccoon</span>
             </span>
-            
           </span>
           
           on <span itemprop="datePublished" content="2014-08-28">March 23, 2015</span>
@@ -113,13 +136,18 @@
 </span>
 
         
-
-        
         <div class="tags">
           <small>
           <i class="fa fa-tags"></i>
             tag1, tag2
           </small>
+        </div>
+        
+
+        
+        <div class="share">
+          <!-- Go to www.addthis.com/dashboard to customize your tools -->
+          <div class="addthis_sharing_toolbox"></div>
         </div>
         
 
@@ -131,6 +159,13 @@
       </div>
 
       
+      <div class="content-panel comments">
+        <div id="disqus_thread">
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+      </div>
+      
 
       
 
@@ -141,15 +176,39 @@
 </div>
 
 
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+function disqus_config() { this.experiment.enable_scroll_container = true; }
+var disqus_shortname = "supersuraccoon"; // required: replace example with your forum shortname
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+
 
       </div>
     </div>
     <div class="footer clearfix">
   <div class="col-md-6">
-    Made with <i class="fa fa-heart"></i> by <a href="https://twitter.com/supersuraccoon">SuperSuRaccoon</a>
+      
+
+      
+          開発者: <i class="fa fa-heart"></i> SuperSuRaccoon
+      
+
+      
   </div>
   <div class="col-md-6">
-    &lt;/&gt; on <a href="https://github.com/supersuraccoon">Github</a> &nbsp;<i class="fa fa-github-alt"></i>
+      
+
+      
+        <i class="fa fa-send"></i> : <a href="mailto:supersuraccoon@gmail.com">supersuraccoon@gmail.com</a>
+      
+
+      
   </div>
 </div>
 
@@ -160,6 +219,7 @@
 <script>hljs.initHighlightingOnLoad();</script>
 <script type="text/javascript">
    $(document).ready(function() {
+      $("#my-menu").css("visibility", true);
       $("#my-menu").mmenu().on( "closed.mm", function() {
             $(".menu-button").show();
          });

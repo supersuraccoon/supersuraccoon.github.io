@@ -13,6 +13,7 @@
 <link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
 <link rel="stylesheet" type="text/css" media="all" href="/css/jquery.mmenu.all.css" />
 <link rel="stylesheet" href="/css/highlightjs.piperita.css">
+<link rel="stylesheet" type="text/css" media="all" href="/css/animate.css" />
 
 <!-- Favicons generated at http://realfavicongenerator.net/ -->
 <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
@@ -30,33 +31,60 @@
 <meta name="theme-color" content="#ffffff">
 
 
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56ebab41c4c7354d"></script>
+
 </head>
 
 
     <body>
 
-    <nav id="my-menu">
+    <nav id="my-menu" style="visibility:hidden;">
   <div>
-    <p>SuperSuRaccoon</p>
-
     <ul class="pages">
-      	<li><a href="/en"><i class="fa fa-home"></i> Home</a></li>
-        <li><a href="/posts/"><i class="fa fa-archive"></i> All Posts</a></li>
-        
+      
+        <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="/posts"><i class="fa fa-archive"></i> All Posts</a></li>
+        <li><a href="/categories"><i class="fa fa-list"></i> Categories</a></li>
+        <li><a href="/tags"><i class="fa fa-tags"></i> Tags</a></li>
         <li><a href="/search"><i class="fa fa-search"></i> Search</a></li>
-        
-      	<li><a href="/cn"><i class="fa fa-hand-o-right"></i>中文</a></li>
-      	<li><a href="/"><i class="fa fa-hand-o-right"></i>English</a></li>
-      	<li><a href="/jp"><i class="fa fa-hand-o-right"></i>日本語</a></li>
-    </ul>
 
+        <br>
+        <hr width="70%" style="border: 0; border-bottom: 2px dotted #ccc; background: #000000;">
+        <li><a href="/"><i class="fa fa-check-square-o"></i>English</a></li>
+        <li><a href="/cn"><i class="fa fa-square-o"></i>Chinese</a></li>
+        <li><a href="/jp"><i class="fa fa-square-o"></i>Japanese</a></li>
+      
+
+      
+
+      
+
+    </ul>
+    <hr width="80%">
     <p class="links">
-  <a href="http://www.twitter.com/supersuraccoon" target="_new"><i class="fa fa-twitter"></i></a>
+  
+  	<a href="http://www.twitter.com/supersuraccoon" target="_new">
+  	<i class="fa fa-twitter"></i></a>
+  
+
+  
+  	<a href="https://www.facebook.com/supersuraccoon" target="_new">
+  	<i class="fa fa-facebook-square"></i></a>
+  
+
+  
+  	<a href="http://weibo.com/supersuraccoon" target="_new">
+  	<i class="fa fa-weibo"></i></a>
   
   
-  <a href="https://github.com/supersuraccoon" target="_new"><i class="fa fa-github-alt"></i></a>
   
-  <a href="/feed.xml" target="_new"><i class="fa fa-rss"></i></a>
+  	<a href="https://github.com/supersuraccoon" target="_new">
+  	<i class="fa fa-github-alt"></i></a>
+  
+
+  <a href="http://www.supersuraccoon-cocos2d.com" target="_new">
+  <i class="fa fa-wordpress"></i></a>
 </p>
 
   </div>
@@ -82,33 +110,8 @@
       
 
           <li>
-            <a href="/jp/categories1/2015/03/23/hello-world/">ハローワールド</a>
-          </li>
-      
-        
-    
-
-    
-      
-      
-
-      
-
-          <li>
             <a href="/categories1/2015/03/23/hello-world.en/">Hello World</a>
-          </li>
-      
-        
-    
-
-    
-      
-      
-
-      
-
-          <li>
-            <a href="/cn/categories1/2015/03/23/hello-world/">你好世界</a>
+            <small class="hidden-xs">March 23, 2015</small>
           </li>
       
         </ul>
@@ -124,10 +127,22 @@
     </div>
     <div class="footer clearfix">
   <div class="col-md-6">
-    Made with <i class="fa fa-heart"></i> by <a href="https://twitter.com/supersuraccoon">SuperSuRaccoon</a>
+      
+          Made with <i class="fa fa-heart"></i> by SuperSuRaccoon
+      
+
+      
+
+      
   </div>
   <div class="col-md-6">
-    &lt;/&gt; on <a href="https://github.com/supersuraccoon">Github</a> &nbsp;<i class="fa fa-github-alt"></i>
+      
+        <i class="fa fa-send"></i> : <a href="mailto:supersuraccoon@gmail.com">supersuraccoon@gmail.com</a>
+      
+
+      
+
+      
   </div>
 </div>
 
@@ -138,6 +153,7 @@
 <script>hljs.initHighlightingOnLoad();</script>
 <script type="text/javascript">
    $(document).ready(function() {
+      $("#my-menu").css("visibility", true);
       $("#my-menu").mmenu().on( "closed.mm", function() {
             $(".menu-button").show();
          });

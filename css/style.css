@@ -1,7 +1,7 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700);
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
-@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro:400,700);
+@import url(http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,400,300,700);
+@import url(http://fonts.useso.com/css?family=Montserrat);
+@import url(http://fonts.useso.com/css?family=Anonymous+Pro:400,700);
 /* Colours */
 /* Responsive sizes */
 /* Globals */
@@ -10,16 +10,20 @@ html {
   overflow-x: hidden; }
 
 body {
+  background-image: url("../images/site_bg.jpg");
+  /*background-color:#000000;*/
+  background-repeat: repeat;
+  background-position: top left;
+  background-attachment: scroll;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  background-color: #2D2D29;
   color: #FFFFFF;
   font-size: 16px;
   height: 100%;
   width: 100%; }
 
 a, a:active {
-  color: #3CA2A2;
+  color: #ffffff;
   text-decoration: none; }
 
 a:hover {
@@ -76,21 +80,21 @@ ul {
       left: 40px; } }
 
 .content-panel {
-  background-color: #3B3B35;
+  background-color: #111111;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 30px;
   padding-right: 30px;
   margin-top: 20px;
-  box-shadow: 0px 0px 0px 0px, 0px 6px 12px rgba(0, 0, 0, 0.2);
-  border-bottom: 5px solid #3CA2A2; }
+  border: 5px solid #FFFFFF;
+  box-shadow: 3px 3px 3px #000000; }
 
 #my-menu p {
   margin-bottom: 5px; }
 #my-menu a, #my-menu a:active {
   color: #FFFFFF; }
 #my-menu a:hover {
-  color: #3CA2A2; }
+  color: #ffffff; }
 #my-menu .pages .fa {
   margin-right: 10px; }
 
@@ -105,19 +109,124 @@ ul {
         padding-left: 10px;
         padding-right: 10px; } }
   .links .fa {
-    -webkit-transition: 0.3s;
+    /*-webkit-transition: 0.3s;
     -moz-transition: 0.3s;
-    transition: 0.3s; }
+    transition: 0.3s;*/ }
+  .links .fa-twitter {
+    animation-timing-function: ease-in-out;
+    animation-name: breatheTwitter;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-name: breatheTwitter;
+    -o-animation-duration: 3000ms;
+    -o-animation-iteration-count: infinite;
+    -o-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-name: breatheTwitter;
+    -webkit-animation-duration: 3000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-name: breatheTwitter;
+    -moz-animation-duration: 3000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate; }
+  .links .fa-github-alt {
+    animation-timing-function: ease-in-out;
+    animation-name: breatheGithub;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-name: breatheGithub;
+    -o-animation-duration: 3000ms;
+    -o-animation-iteration-count: infinite;
+    -o-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-name: breatheGithub;
+    -webkit-animation-duration: 3000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-name: breatheGithub;
+    -moz-animation-duration: 3000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate; }
+  .links .fa-facebook-square {
+    animation-timing-function: ease-in-out;
+    animation-name: breatheFacebook;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-name: breatheFacebook;
+    -o-animation-duration: 3000ms;
+    -o-animation-iteration-count: infinite;
+    -o-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-name: breatheFacebook;
+    -webkit-animation-duration: 3000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-name: breatheFacebook;
+    -moz-animation-duration: 3000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate; }
+  .links .fa-weibo {
+    animation-timing-function: ease-in-out;
+    animation-name: breatheWeibo;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-name: breatheWeibo;
+    -o-animation-duration: 3000ms;
+    -o-animation-iteration-count: infinite;
+    -o-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-name: breatheWeibo;
+    -webkit-animation-duration: 3000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-name: breatheWeibo;
+    -moz-animation-duration: 3000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate; }
+  .links .fa-wordpress {
+    animation-timing-function: ease-in-out;
+    animation-name: breatheWordpress;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-name: breatheWordpress;
+    -o-animation-duration: 3000ms;
+    -o-animation-iteration-count: infinite;
+    -o-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-name: breatheWordpress;
+    -webkit-animation-duration: 3000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-name: breatheWordpress;
+    -moz-animation-duration: 3000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate; }
   .links .fa-twitter:hover {
-    color: #6dabda; }
-  .links .fa-linkedin:hover {
-    color: #2b77b1; }
-  .links .fa-google-plus:hover {
-    color: #c95644; }
+    /*color: $twitter;*/ }
   .links .fa-github-alt:hover {
-    color: #f6c2a4; }
-  .links .fa-stack-overflow:hover {
-    color: #c98b3b; }
+    /*color: $github;*/ }
+  .links .fa-facebook-square:hover {
+    /*color: $facebook;*/ }
+  .links .fa-weibo:hover {
+    /*color: $weibo;*/ }
+  .links .fa-wordpress:hover {
+    /*color: $wordpress*/ }
   .links .fa-rss:hover {
     color: #eea33a; }
 
@@ -142,21 +251,22 @@ ul {
         margin-left: -10%;
         width: 120%; } }
   .index .content-panel:nth-of-type(1) {
-    border-bottom: 10px solid #3CA2A2; }
+    border: 8px solid #ffffff;
+    box-shadow: 3px 3px 3px #000000; }
   .index .author-header {
     font-family: 'Montserrat', sans-serif;
-    color: #3CA2A2;
+    color: #ffffff;
     margin-top: 0px;
     padding-top: 15px;
-    font-size: 30px; }
+    font-size: 25px; }
     @media (min-width: 768px) {
       .index .author-header {
-        font-size: 52px;
-        margin-top: 0px; } }
+        font-size: 25px;
+        margin-top: 20px; } }
     @media (min-width: 992px) {
       .index .author-header {
-        font-size: 60px;
-        margin-top: -20px; } }
+        font-size: 35px;
+        margin-top: 0px; } }
   .index .row {
     height: 100%;
     max-height: 100%;
@@ -166,7 +276,15 @@ ul {
   .index .gravatar {
     width: 100%;
     margin-top: -80px;
+    margin-bottom: 10px;
     text-align: center; }
+  .index .about-image {
+    border: 3px dotted #eeeeee; }
+  .index .about-image:hover {
+    animation: jello 1s;
+    -o-animation: jello 1s;
+    -moz-animation: jello 1s;
+    -webkit-animation: jello 1s; }
   .index .author-text {
     text-align: center;
     margin-top: 30px; }
@@ -179,7 +297,7 @@ ul {
     font-size: 20px; }
     .index .articles h2 {
       margin-bottom: 30px;
-      color: #3CA2A2;
+      color: #ffffff;
       font-size: 26px; }
     .index .articles ul {
       padding: 0px; }
@@ -187,7 +305,7 @@ ul {
         margin-bottom: 20px;
         font-size: 24px; }
         .index .articles ul li a:hover {
-          color: #969696; }
+          color: #ffff00; }
         .index .articles ul li small {
           font-size: 14px;
           margin-top: -10px;
@@ -198,7 +316,7 @@ ul {
     .index .articles a, .index .articles a:active {
       color: #FFFFFF; }
     .index .articles a:hover {
-      color: #3CA2A2; }
+      color: #ffffff; }
   .index .copyright {
     margin-top: 50px;
     text-align: center; }
@@ -213,7 +331,7 @@ ul {
     .index .menu a, .index .menu a:active {
       color: #FFFFFF; }
     .index .menu a:hover {
-      color: #3CA2A2; }
+      color: #ffffff; }
     .index .menu ul {
       margin-bottom: 30px;
       padding-left: 10px; }
@@ -278,7 +396,7 @@ ul {
     .single .menu a, .single .menu a:active {
       color: #FFFFFF; }
     .single .menu a:hover {
-      color: #3CA2A2; }
+      color: #ffffff; }
     .single .menu h4 {
       margin-top: 20px; }
     .single .menu .share {
@@ -432,7 +550,7 @@ ul {
         .single .article .content .tags a, .single .article .content .tags a:active {
           color: #FFFFFF; }
         .single .article .content .tags a:hover {
-          color: #3CA2A2; }
+          color: #ffffff; }
       .single .article .content .share {
         margin-top: 20px;
         margin-bottom: 10px;
@@ -492,7 +610,7 @@ ul {
 .error .error-text {
   margin-top: 30px; }
   .error .error-text a {
-    color: #3CA2A2; }
+    color: #ffffff; }
 .error .links {
   font-size: 1em; }
 
@@ -501,6 +619,11 @@ ul {
   margin-left: 0%; }
   .footer .fa-heart {
     color: #C04848; }
+  .footer .fa-heart:hover {
+    animation: jello 1s;
+    -o-animation: jello 1s;
+    -moz-animation: jello 1s;
+    -webkit-animation: jello 1s; }
   @media (min-width: 768px) {
     .footer {
       width: 90%;
@@ -514,7 +637,174 @@ ul {
       width: 70%;
       margin-left: 15%; } }
   .footer div {
-    color: #969696;
+    color: #ffffff;
+    opacity: 0.8;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px; }
+
+/* breatheTwitter */
+@keyframes breatheTwitter {
+  0% {
+    opacity: .6;
+    color: white; }
+  100% {
+    opacity: 1;
+    color: #3bebeb;
+    color: #3bffff; } }
+@-o-keyframes breatheTwitter {
+  0% {
+    opacity: .6;
+    color: white; }
+  100% {
+    opacity: 1;
+    color: #3bebeb;
+    color: #3bffff; } }
+@-webkit-keyframes breatheTwitter {
+  0% {
+    opacity: .6;
+    color: white; }
+  100% {
+    opacity: 1;
+    color: #3bebeb;
+    color: #3bffff; } }
+@-moz-keyframes breatheTwitter {
+  0% {
+    opacity: .6;
+    color: white; }
+  100% {
+    opacity: 1;
+    color: #3bebeb;
+    color: #3bffff; } }
+/* breatheGithub */
+@keyframes breatheGithub {
+  0% {
+    opacity: .6;
+    color: white; }
+  100% {
+    opacity: 1;
+    color: #ffa500;
+    color: #ffa500; } }
+@-o-keyframes breatheGithub {
+  0% {
+    opacity: .6;
+    color: white; }
+  100% {
+    opacity: 1;
+    color: #ffa500;
+    color: #ffa500; } }
+@-webkit-keyframes breatheGithub {
+  0% {
+    opacity: .6;
+    color: white; }
+  100% {
+    opacity: 1;
+    color: #ffa500;
+    color: #ffa500; } }
+@-moz-keyframes breatheGithub {
+  0% {
+    opacity: .6;
+    color: white; }
+  100% {
+    opacity: 1;
+    color: #ffa500;
+    color: #ffa500; } }
+/* breatheFacebook */
+@keyframes breatheFacebook {
+  0% {
+    opacity: .6;
+    color: white; }
+  100% {
+    opacity: 1;
+    color: #4169E1;
+    color: #4169E1; } }
+@-o-keyframes breatheFacebook {
+  0% {
+    opacity: .6;
+    color: white; }
+  100% {
+    opacity: 1;
+    color: #4169E1;
+    color: #4169E1; } }
+@-webkit-keyframes breatheFacebook {
+  0% {
+    opacity: .6;
+    color: white; }
+  100% {
+    opacity: 1;
+    color: #4169E1;
+    color: #4169E1; } }
+@-moz-keyframes breatheFacebook {
+  0% {
+    opacity: .6;
+    color: white; }
+  100% {
+    opacity: 1;
+    color: #4169E1;
+    color: #4169E1; } }
+/* breatheWeibo */
+@keyframes breatheWeibo {
+  0% {
+    opacity: .6;
+    color: white; }
+  100% {
+    opacity: 1;
+    color: #e43437;
+    color: #e43437; } }
+@-o-keyframes breatheWeibo {
+  0% {
+    opacity: .6;
+    color: white; }
+  100% {
+    opacity: 1;
+    color: #e43437;
+    color: #e43437; } }
+@-webkit-keyframes breatheWeibo {
+  0% {
+    opacity: .6;
+    color: white; }
+  100% {
+    opacity: 1;
+    color: #e43437;
+    color: #e43437; } }
+@-moz-keyframes breatheWeibo {
+  0% {
+    opacity: .6;
+    color: white; }
+  100% {
+    opacity: 1;
+    color: #e43437;
+    color: #e43437; } }
+/* breatheWordpress */
+@keyframes breatheWordpress {
+  0% {
+    opacity: .6;
+    color: white; }
+  100% {
+    opacity: 1;
+    color: #2a67aa;
+    color: #2a67aa; } }
+@-o-keyframes breatheWordpress {
+  0% {
+    opacity: .6;
+    color: white; }
+  100% {
+    opacity: 1;
+    color: #2a67aa;
+    color: #2a67aa; } }
+@-webkit-keyframes breatheWordpress {
+  0% {
+    opacity: .6;
+    color: white; }
+  100% {
+    opacity: 1;
+    color: #2a67aa;
+    color: #2a67aa; } }
+@-moz-keyframes breatheWordpress {
+  0% {
+    opacity: .6;
+    color: white; }
+  100% {
+    opacity: 1;
+    color: #2a67aa;
+    color: #2a67aa; } }
