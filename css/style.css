@@ -273,11 +273,13 @@ ul {
     margin-right: 0px; }
   .index .gravatar {
     width: 100%;
-    margin-top: -80px;
+    margin-top: -90px;
     margin-bottom: 10px;
     text-align: center; }
   .index .about-image {
-    border: 3px dotted #eeeeee; }
+    background-color: #000000;
+    border: 4px solid #eeeeee;
+    padding: 5px; }
   .index .about-image:hover {
     animation: jello 1s;
     -o-animation: jello 1s;
