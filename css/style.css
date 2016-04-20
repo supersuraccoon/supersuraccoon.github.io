@@ -78,14 +78,11 @@ ul {
       left: 40px; } }
 
 .content-panel {
-  background-color: #111111;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 30px;
   padding-right: 30px;
-  margin-top: 20px;
-  border: 3px solid #FFFFFF;
-  box-shadow: 3px 3px 3px #000000; }
+  margin-top: 20px; }
 
 #my-menu p {
   margin-bottom: 5px; }
@@ -431,16 +428,16 @@ ul {
     padding: 0px; }
     @media (min-width: 768px) {
       .single .article {
-        width: 90%;
-        margin-left: 5%; } }
+        width: 70%;
+        margin-left: 15%; } }
     @media (min-width: 992px) {
       .single .article {
         width: 70%;
         margin-left: 15%; } }
     @media (min-width: 1200px) {
       .single .article {
-        width: 50%;
-        margin-left: 25%; } }
+        width: 70%;
+        margin-left: 15%; } }
     .single .article .thumb {
       margin-top: 20px;
       margin-bottom: 0px;
