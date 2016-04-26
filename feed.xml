@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SuperSuRaccoon</title>
+    <description>SuperSuRaccoon&#39;s Blog</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 21 Mar 2016 15:12:50 +0800</pubDate>
+    <lastBuildDate>Mon, 21 Mar 2016 15:12:50 +0800</lastBuildDate>
+    <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>ハローワールド</title>
+        <description>&lt;p&gt;ハローワールド
+ハローワールド
+ハローワールド
+ハローワールド
+ハローワールド
+ハローワールド
+ハローワールド&lt;/p&gt;
+</description>
+        <pubDate>Mon, 23 Mar 2015 23:31:19 +0800</pubDate>
+        <link>/jp/categories1/2015/03/23/hello-world/</link>
+        <guid isPermaLink="true">/jp/categories1/2015/03/23/hello-world/</guid>
+        
+        <category>tag1</category>
+        
+        <category>tag2</category>
+        
+        
+        <category>categories1</category>
+        
+      </item>
+    
+      <item>
+        <title>Hello World</title>
+        <description>&lt;p&gt;Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World&lt;/p&gt;
+</description>
+        <pubDate>Mon, 23 Mar 2015 23:31:19 +0800</pubDate>
+        <link>/categories1/2015/03/23/hello-world.en/</link>
+        <guid isPermaLink="true">/categories1/2015/03/23/hello-world.en/</guid>
+        
+        <category>tag1</category>
+        
+        <category>tag2</category>
+        
+        
+        <category>categories1</category>
+        
+      </item>
+    
+      <item>
+        <title>你好世界</title>
+        <description>&lt;p&gt;你好世界
+你好世界
+你好世界
+你好世界
+你好世界
+你好世界
+你好世界&lt;/p&gt;
+</description>
+        <pubDate>Mon, 23 Mar 2015 23:31:19 +0800</pubDate>
+        <link>/cn/categories1/2015/03/23/hello-world/</link>
+        <guid isPermaLink="true">/cn/categories1/2015/03/23/hello-world/</guid>
+        
+        <category>tag1</category>
+        
+        <category>tag2</category>
+        
+        
+        <category>categories1</category>
+        
+      </item>
+    
+  </channel>
+</rss>
